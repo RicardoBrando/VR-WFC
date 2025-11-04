@@ -1,8 +1,8 @@
 # 🎮 Journal d’avancement — Projet “Generative Worlds”
 
-Groupe : 8
-Membres (2 ou 3 max): Ewan DURAND / Maxime KERVRAN 
-**Thème choisi :**
+**Groupe : 8**
+**Membres (2 ou 3 max): Ewan DURAND / Maxime KERVRAN**
+**Thème choisi : Ville**
 
 ---
 
@@ -31,7 +31,7 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 - Comprendre le fonctionnement de base du plugin WFC sur Unity.
 - Créer un premier exemple de génération simple.
 
-## **Travail réalisé :**
+## **Travail réalisé : On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un asset de ville afin de pouvoir commencer à travailler avec** 
 
 ## **Résultats (captures ou description) :**
 
