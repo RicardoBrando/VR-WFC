@@ -1,0 +1,28 @@
+<set>
+  <tiles>
+<tile name="tileset/objects/Road_1" symmetry="X" weight="1.0"/>
+<tile name="tileset/objects/Road_2" symmetry="X" weight="1.0"/>
+<tile name="tileset/objects/Road_3" symmetry="X" weight="1.0"/>
+<tile name="tileset/objects/Road_4" symmetry="X" weight="1.0"/>
+	</tiles>
+<neighbors>  <neighbor left="tileset/objects/Road_2 3" right="tileset/objects/Road_1 3"/>
+  <neighbor left="tileset/objects/Road_2 0" right="tileset/objects/Road_1 1"/>
+  <neighbor left="tileset/objects/Road_1 3" right="tileset/objects/Road_2 2"/>
+  <neighbor left="tileset/objects/Road_2 3" right="tileset/objects/Road_1 3"/>
+  <neighbor left="tileset/objects/Road_1 1" right="tileset/objects/Road_2 1"/>
+  <neighbor left="tileset/objects/Road_1 2" right="tileset/objects/Road_1 0"/>
+  <neighbor left="tileset/objects/Road_1 3" right="tileset/objects/Road_2 2"/>
+  <neighbor left="tileset/objects/Road_1 1" right="tileset/objects/Road_1 1"/>
+  <neighbor left="tileset/objects/Road_2 0" right="tileset/objects/Road_1 3"/>
+  <neighbor left="tileset/objects/Road_1 3" right="tileset/objects/Road_2 1"/>
+  <neighbor left="tileset/objects/Road_2 1" right="tileset/objects/Road_1 0"/>
+  <neighbor left="tileset/objects/Road_1 0" right="tileset/objects/Road_1 2"/>
+  <neighbor left="tileset/objects/Road_1 1" right="tileset/objects/Road_3 1"/>
+  <neighbor left="tileset/objects/Road_1 3" right="tileset/objects/Road_3 0"/>
+  <neighbor left="tileset/objects/Road_3 0" right="tileset/objects/Road_1 3"/>
+  <neighbor left="tileset/objects/Road_3 1" right="tileset/objects/Road_1 1"/>
+  <neighbor left="tileset/objects/Road_1 1" right="tileset/objects/Road_4 1"/>
+  <neighbor left="tileset/objects/Road_1 3" right="tileset/objects/Road_4 0"/>
+  <neighbor left="tileset/objects/Road_4 0" right="tileset/objects/Road_1 3"/>
+	</neighbors>
+</set>
