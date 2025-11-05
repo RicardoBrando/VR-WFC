@@ -37,7 +37,7 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 
 ## **Problèmes rencontrés :**
 
-## **Prochaines étapes :**
+## **Prochaines étapes :Réussir à générer un environnement avec WFC**
 
 ---
 
@@ -48,31 +48,38 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 - Créer un environnement cohérent à partir d’un *training sample*.
 - Expérimenter différents paramètres (symétries, contraintes XML…).
 
-## **Travail réalisé :**
+## **Travail réalisé :Utilisation de WFC expliqué dans le tutoriel pour générer un environnement**
 
-## **Résultats / captures :**
+## **Résultats / captures :Pour le moment la génération permet bien de faire apparaître une génération de tuiles en rapport avec l'entrainement donné  mais ce n'est pas tout à fait comme attendu**
 
-## **Problèmes rencontrés :**
+## **Problèmes rencontrés :Le WFC ne parvient pas à générer correctement un envrionnement lorsqu'il y a trop de tuiles différentes utilisées dans l'entrainement et si le résultat et trop grand**
 
-## **Idées d’amélioration :**
+## **Idées d’amélioration :Peut-être qu'avec les contraintes XML cela pourrait mieux fonctionner**
 
 ---
 
 ### 🧭 Mercredi après-midi – Interaction et navigation
 
-**Objectifs du jour :**
+**Objectifs du jour : Génération initiale de l'environnement avec WFC**
 
 - Permettre la navigation dans l’environnement généré.
 - Ajouter une ou plusieurs interactions. Exemples : modification de l’environnement, collecte d’objets, déclenchement d’événements.
 - Gérer les modifications dynamiques de l’environnement (re-génération partielle, sauvegarde de l’état…) --> Utiliser les ressources données et les possibilités du plugin WFC.
 
-## **Travail réalisé :**
+## **Travail réalisé : Génération initiale fonctionnelle et prise en compte des prefabs 3D. Build fonctionnel sur le casque VR.**
 
-## **Résultats / captures :**
+## **Résultats / captures :
+Génération en un seul bloc.
+![Generation complete](image-1.png)**
 
-## **Problèmes rencontrés :**
+## **Problèmes rencontrés : Orientation des bâtiment parfois incorrecte.
+Inconvénient : impossible de re-générer seulement une portion de la carte.**
 
-## **Idées / pistes :**
+## **Idées / pistes : 
+Génération : diviser l'espace pour modifier le contenu en mode d'interaction
+Navigation : Téléportation et Vol (pour l'édition en temps réel)
+Interaction : passage en mode édition -> sélection d'une portion (case) à modifier et possibilité d'y placer des contraintes 
+sous la forme de tuiles fixes.**
 
 ---
 
