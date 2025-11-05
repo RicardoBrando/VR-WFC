@@ -31,7 +31,8 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 - Comprendre le fonctionnement de base du plugin WFC sur Unity.
 - Créer un premier exemple de génération simple.
 
-## **Travail réalisé : On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un asset de ville afin de pouvoir commencer à travailler avec** 
+## **Travail réalisé :** 
+On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un asset de ville afin de pouvoir commencer à travailler avec.
 
 ## **Résultats (captures ou description) :**
 
@@ -48,11 +49,17 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 - Créer un environnement cohérent à partir d’un *training sample*.
 - Expérimenter différents paramètres (symétries, contraintes XML…).
 
-## **Travail réalisé :Utilisation de WFC expliqué dans le tutoriel pour générer un environnement**
+## **Travail réalisé :**
 
-## **Résultats / captures :Pour le moment la génération permet bien de faire apparaître une génération de tuiles en rapport avec l'entrainement donné  mais ce n'est pas tout à fait comme attendu**
+- Utilisation de WFC expliqué dans le tutoriel pour générer un environnement
 
-## **Problèmes rencontrés :Le WFC ne parvient pas à générer correctement un envrionnement lorsqu'il y a trop de tuiles différentes utilisées dans l'entrainement et si le résultat et trop grand**
+## **Résultats / captures :**
+
+- Pour le moment la génération permet bien de faire apparaître une génération de tuiles en rapport avec l'entrainement donné  mais ce n'est pas tout à fait comme attendu
+
+## **Problèmes rencontrés :**
+
+- Le WFC ne parvient pas à générer correctement un envrionnement lorsqu'il y a trop de tuiles différentes utilisées dans l'entrainement et si le résultat et trop grand
 
 ## **Idées d’amélioration :Peut-être qu'avec les contraintes XML cela pourrait mieux fonctionner**
 
@@ -68,18 +75,19 @@ puis y intégrer des **mécaniques d’exploration ou d’interaction** permetta
 
 ## **Travail réalisé : Génération initiale fonctionnelle et prise en compte des prefabs 3D. Build fonctionnel sur le casque VR.**
 
-## **Résultats / captures :
-Génération en un seul bloc.
-![Generation complete](image-1.png)**
+## **Résultats / captures :**
+- Génération en un seul bloc.
+- ![Generation complete](generation_complete.png)
 
-## **Problèmes rencontrés : Orientation des bâtiment parfois incorrecte.
-Inconvénient : impossible de re-générer seulement une portion de la carte.**
+## **Problèmes rencontrés :**
 
-## **Idées / pistes : 
-Génération : diviser l'espace pour modifier le contenu en mode d'interaction
-Navigation : Téléportation et Vol (pour l'édition en temps réel)
-Interaction : passage en mode édition -> sélection d'une portion (case) à modifier et possibilité d'y placer des contraintes 
-sous la forme de tuiles fixes.**
+- Orientation des bâtiment parfois incorrecte.
+- Inconvénient : impossible de re-générer seulement une portion de la carte.
+
+## **Idées / pistes :**
+- Génération : diviser l'espace pour modifier le contenu en mode d'interaction
+- Navigation : Téléportation et Vol (pour l'édition en temps réel)
+- Interaction : passage en mode édition -> sélection d'une portion (case) à modifier et possibilité d'y placer des contraintes sous la forme de tuiles fixes.
 
 ---
 
