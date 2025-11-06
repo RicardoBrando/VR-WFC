@@ -77,7 +77,7 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Résultats / captures :**
 - Génération en un seul bloc.
-- ![Generation complete]([generation_complete.png](https://github.com/RicardoBrando/VR-WFC/blob/main/screenshots/generation_complete.png))
+- ![Generation complete](https://github.com/RicardoBrando/VR-WFC/blob/main/screenshots/generation_complete.png)
 
 ## **Problèmes rencontrés :**
 
