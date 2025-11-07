@@ -86,7 +86,7 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Idées / pistes :**
 - Génération : diviser l'espace pour modifier le contenu en mode d'interaction
-- Navigation : Téléportation et Vol (pour l'édition en temps réel)
+- Navigation : Téléportation + Rewind, movement continu (?)
 - Interaction : passage en mode édition -> sélection d'une portion (case) à modifier et possibilité d'y placer des contraintes sous la forme de tuiles fixes.
 
 ---
