@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
+  - Editing - Layer 0
+  - Editing - Layer 1
+  - Editing - Layer 2
   - 
   - 
   - 
@@ -41,7 +44,4 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Teleport

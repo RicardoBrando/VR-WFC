@@ -34,10 +34,10 @@ public class SimpleTiledWFC : MonoBehaviour{
  		}
  	}
 
- 	void Start(){
-		Generate();
-		Run();
-	}
+	//	void Start(){
+	//	Generate();
+	//	Run();
+	//}
 
 	void Update(){
 		if (incremental){
