@@ -91,12 +91,74 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ---
 
-### 🎨 Jeudi après-midi – Finition et expérience utilisateur
+### 🎨 Jeudi après-midi – Expérience utilisateur
 
 **Objectifs du jour :**
 
 - Donner une cohérence visuelle et interactive à l’expérience.
 - Finaliser les éléments techniques et préparer la présentation.
+
+## **Travail réalisé :**
+
+- Ajout de la gestion de la VR via les plug-ins XR afin d'avoir la vue utilisateur avec le casque et la navigation via la téléportation.
+
+## **Problèmes restants :**
+
+- Interaction pas fonctionnelle
+
+## **Améliorations prévues :**
+
+- Faire une interaction permettant de regénérer l'environnement avec des tuiles fixes qui restent dans le nouvel environnement.
+- Lier l'interaction à un bouton d'une manette pour pouvoir générer en tant qu'utilisateur.
+- Implémenter un moyen d'interagir facilement avec l'environnement pour l'utilisateur.
+
+---
+
+### 🎨 Lundi – Gestion de la vue utilisateur pour l'interaction
+
+**Objectifs du jour :**
+
+- Créer une minimap sur laquelle il sera possible d'interagir via une manette pour fixer les tuiles avant la modification de l'environnement.
+
+## **Travail réalisé :**
+
+- Création et implémentation de la minimap avec vue du dessus pour l'utilisateur afin de pouvoir voir l'environnement et interagir avec plus facilement.
+
+## **Problèmes restants :**
+
+- Interaction pas fonctionnelle
+
+## **Améliorations prévues :**
+
+- Faire l'interaction et la relier à la minimap et la manette pour interagir.
+
+---
+
+### 🎨 Mercredi Matin – Interaction
+
+**Objectifs du jour :**
+
+- Mise en place de l'interaction consistant à sélectionner une ou plusieurs tuiles avec le bouton d'une manette afin de les fixer dans l'environnement, puis regénérer l'environnement autour de ces tuiles fixes pour avoir un nouvel environnement qui conserve les tuiles fixes à l'endroit où elles ont été fixées et qui génère de nouvelles tuiles autour.
+
+## **Travail réalisé :**
+
+- Implémentation en brut pour certaines tuiles de la fonctionnalité d'interaction et tests de regénération avec ces tuiles fonctionnel.
+
+## **Problèmes restants :**
+
+- Implémentation de l'interaction pour n'importe quelle tuile pas encore opérationnel.
+
+## **Améliorations prévues :**
+
+- Finir d'implémenter l'interaction
+
+---
+
+### 🎨 Jeudi Après-midi – Finalisation de l'interaction et finitions
+
+**Objectifs du jour :**
+
+- Finir de mettre en place l'interaction
 
 ## **Travail réalisé :**
 
@@ -106,7 +168,7 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ---
 
-### 🎤 Vendredi après-midi – Présentation finale
+### 🎤 Dimanche – Présentation finale
 
 ## **Résumé du projet :**
 
