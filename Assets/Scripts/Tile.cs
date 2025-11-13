@@ -22,4 +22,14 @@ public class Tile : MonoBehaviour
     {
         m_Parent = parent;
     }
+
+    public GameObject GetGeneratedTile()
+    {
+        return m_GeneratedTile;
+    }
+
+    public GameObject GetMiniTile()
+    {
+        return m_MiniTile;
+    }
 }

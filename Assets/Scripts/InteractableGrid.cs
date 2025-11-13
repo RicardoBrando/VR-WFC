@@ -17,7 +17,7 @@ public class InteractableGrid : MonoBehaviour
 
     private GameObject m_Map;
     private int m_MapSize = 15;
-    private GameObject[] m_Tiles;
+    public GameObject[] m_Tiles;
 
     private void Awake()
     {
@@ -26,9 +26,15 @@ public class InteractableGrid : MonoBehaviour
 
     private void Start()
     {
-        m_Map = Instantiate(gridPrefab, transform.position, transform.rotation);
+        m_Map = Instantiate(gridPrefab, layer0.transform.position, Quaternion.identity);
         m_Map.transform.parent = layer0.transform;
         m_Map.transform.position += new Vector3(7.5f, 1f, 7.5f);
+    }
+
+    private void Update()
+    {
+        Vector3 normale = -Vector3.Cross(m_Map.transform.right, m_Map.transform.forward);
+        transform.up = normale;
     }
 
     public void GenerateGrid()

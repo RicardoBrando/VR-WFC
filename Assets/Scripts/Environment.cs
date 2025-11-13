@@ -25,6 +25,21 @@ public class Environment : MonoBehaviour
                 transform.GetChild(0).GetComponent<Wfc>().GenerateMap();
             grid.GenerateInteractableGrid(1f);
         }
-        
+        else
+        {
+            transform.GetChild(0).GetComponent<Wfc>().GenerateFrom();
+        }
+    }
+
+    public void GenerateEnvironmentWithDelay(float delay)
+    {
+        StopAllCoroutines();
+        StartCoroutine(GenerateAfterSeconds(delay));
+    }
+
+    private IEnumerator GenerateAfterSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        GenerateEnvironment();
     }
 }

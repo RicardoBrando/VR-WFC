@@ -26,7 +26,7 @@ public class SimpleTiledWFC : MonoBehaviour{
 	public GameObject output;
 	protected Transform group;
 	public Dictionary<string, GameObject> obmap = new Dictionary<string, GameObject>();
-    private bool undrawn = true;
+    protected bool undrawn = true;
 
 	public void destroyChildren (){
 		foreach (Transform child in this.transform) {
@@ -39,11 +39,11 @@ public class SimpleTiledWFC : MonoBehaviour{
 	//	Run();
 	//}
 
-	void Update(){
-		if (incremental){
-			Run();
-		}
-	}
+	//void Update(){
+	//	if (incremental){
+	//		Run();
+	//	}
+	//}
 
 
 	public void Run(){
@@ -91,8 +91,9 @@ public class SimpleTiledWFC : MonoBehaviour{
 		if (group == null){return;}
         undrawn = false;
 		for (int y = 0; y < depth; y++){
-			for (int x = 0; x < width; x++){ 
-				if (rendering[x,y] == null){
+			for (int x = 0; x < width; x++)
+            {
+                if (rendering[x,y] == null){
 					string v = model.Sample(x, y);
 					int rot = 0;
 					GameObject fab = null;

@@ -11,19 +11,19 @@ using UnityEngine;
 
 public abstract class Model
 {
-	protected bool[][] wave;
+	public bool[][] wave;
 
 	protected int[][][] propagator;
 	int[][][] compatible;
 	protected int[] observed;
 
-	protected bool init = false;
+	public bool init = false;
 
 	Tuple<int, int>[] stack;
 	int stacksize;
 
-	protected System.Random random;
-	protected int FMX, FMY, T;
+	public System.Random random;
+	public int FMX, FMY, T;
 	protected bool periodic;
 
 	protected double[] weights;
@@ -74,7 +74,7 @@ public abstract class Model
 
 	
 
-	bool? Observe()
+	public bool? Observe()
 	{
 		double min = 1E+3;
 		int argmin = -1;
@@ -115,7 +115,7 @@ public abstract class Model
 		return null;
 	}
 
-	protected void Propagate()
+	public void Propagate()
 	{
 		while (stacksize > 0)
 		{
@@ -153,19 +153,6 @@ public abstract class Model
 		}
 	}
 
-    public void SetFixedTile(int x, int y, int t)
-    {
-        int i = x + y * FMX;
-        // 1. Désactive toutes les autres possibilités pour cette cellule
-        for (int t2 = 0; t2 < T; t2++)
-        {
-            if (t2 != t)
-            {
-                Ban(i, t2);
-            }
-        }
-    }
-
     public bool Run(int seed, int limit)
 	{
 		if (wave == null) Init();
@@ -181,8 +168,6 @@ public abstract class Model
 			random = new System.Random(seed);
 		}
 
-		//Debug.Log(wave[0].Length);
-
         for (int l = 0; l < limit || limit == 0; l++)
 		{
 			bool? result = Observe();
@@ -193,7 +178,7 @@ public abstract class Model
 		return true;
 	}
 
-	protected void Ban(int i, int t)
+	public void Ban(int i, int t)
 	{
 		wave[i][t] = false;
 
@@ -213,7 +198,7 @@ public abstract class Model
 		entropies[i] -= sumsOfWeightLogWeights[i] / sum - Math.Log(sum);
 	}
 
-	protected virtual void Clear()
+	public virtual void Clear()
 	{
 		for (int i = 0; i < wave.Length; i++)
 		{

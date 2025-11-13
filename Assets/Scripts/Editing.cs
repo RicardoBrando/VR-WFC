@@ -11,6 +11,12 @@ public class Editing : MonoBehaviour
     private InputActionReference m_SwitchLayer;
     [SerializeField]
     private InputActionReference m_Select;
+    [SerializeField]
+    private InputActionReference m_Generate;
+    [SerializeField]
+    private InteractableGrid grid;
+    [SerializeField]
+    private Environment environment;
 
     public InteractionLayerMask[] layerMasks;
 
@@ -22,14 +28,19 @@ public class Editing : MonoBehaviour
 
     private bool m_WaitForStickRelease;
     private bool m_WaitForActivateRelease;
+    private bool m_WaitForGenerateRelease;
 
     private Vector2 m_StickInput;
     private float m_SelectInput;
+    private float m_GenerateInput;
+
+    public HashSet<int> tilesToDelete;
 
     private void Start()
     {
         m_LayerMask = 0;
         m_WaitForStickRelease = false;
+        tilesToDelete = new HashSet<int>();
     }
 
     private void Update()
@@ -62,14 +73,26 @@ public class Editing : MonoBehaviour
             if (m_SelectInput == 0)
                 m_WaitForActivateRelease = false;
         }
-        else if (m_SelectInput == 1)
+        else if (m_SelectInput == 1 && m_LayerMask == 1)
         {
             m_WaitForActivateRelease = true;
             RaycastHit hit;
             if(m_Ray.TryGetCurrent3DRaycastHit(out hit))
             {
                 GameObject target = hit.collider.transform.parent.gameObject;
+                tilesToDelete.Add(GetObjectIndex(target));
             }
+        }
+
+        if (m_WaitForGenerateRelease)
+        {
+            if (m_GenerateInput == 0)
+                m_WaitForGenerateRelease = false;
+        }
+        else if (m_GenerateInput == 1)
+        {
+            m_WaitForGenerateRelease = true;
+            environment.GenerateEnvironmentWithDelay(3f);
         }
     }
 
@@ -77,5 +100,16 @@ public class Editing : MonoBehaviour
     {
         m_StickInput = m_SwitchLayer.action.ReadValue<Vector2>();
         m_SelectInput = m_Select.action.ReadValue<float>();
+        m_GenerateInput = m_Generate.action.ReadValue<float>();
+    }
+
+    private int GetObjectIndex(GameObject go)
+    {
+        for (int i=0; i < grid.m_Tiles.Length; i++)
+        {
+            if (grid.m_Tiles[i] == go)
+                return i;
+        }
+        return -1;
     }
 }

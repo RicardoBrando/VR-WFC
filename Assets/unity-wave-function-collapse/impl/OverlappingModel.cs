@@ -172,7 +172,7 @@ class OverlappingModel : Model
 		return res;
 	}
 
-	protected override void Clear()
+	public override void Clear()
 	{
 		base.Clear();
         //here we could actually set ground as all 4 sides possibly, think i need to query which ngram is made from the ground tile index, instead of just using that index into the ngrams
