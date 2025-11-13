@@ -5,11 +5,17 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     private GameObject m_Parent;
-    public GameObject m_GeneratedTile;
-
+    private GameObject m_MiniTile;
+    private GameObject m_GeneratedTile;
+    
     public void SetGeneratedTile(GameObject generatedTile)
     {
         m_GeneratedTile = generatedTile;
+    }
+
+    public void SetMiniTile(GameObject miniTile)
+    {
+        m_MiniTile = miniTile;
     }
 
     public void SetParent(GameObject parent)

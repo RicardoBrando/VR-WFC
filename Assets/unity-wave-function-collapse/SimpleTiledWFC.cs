@@ -24,7 +24,7 @@ public class SimpleTiledWFC : MonoBehaviour{
 	public SimpleTiledModel model = null;
 	public GameObject[,] rendering;
 	public GameObject output;
-	private Transform group;
+	protected Transform group;
 	public Dictionary<string, GameObject> obmap = new Dictionary<string, GameObject>();
     private bool undrawn = true;
 

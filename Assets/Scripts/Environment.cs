@@ -4,10 +4,27 @@ using UnityEngine;
 
 public class Environment : MonoBehaviour
 {
-    public InteractableGrid interactableGrid;
+    [SerializeField]
+    private GameObject output_tiles;
+    [SerializeField]
+    private InteractableGrid grid;
+
+    private bool m_FirstGeneration = true;
+
     void Start()
     {
-        for (int i = 0; i < 9; i++)
-            transform.transform.GetChild(i).GetComponent<Wfc>().GenerateBloc();
+        GenerateEnvironment();
+    }
+
+    private void GenerateEnvironment()
+    {
+        if (m_FirstGeneration)
+        {
+            m_FirstGeneration = false;
+            if (output_tiles.transform.childCount == 0)
+                transform.GetChild(0).GetComponent<Wfc>().GenerateMap();
+            grid.GenerateInteractableGrid(1f);
+        }
+        
     }
 }

@@ -1,56 +1,56 @@
 <set>
   <tiles>
-<tile name="tileset/objects/Road_4T" symmetry="T" weight="0,2"/>
+<tile name="tileset/objects/Road_4T" symmetry="T" weight="0,3"/>
 <tile name="tileset/objects/Road_2L" symmetry="L" weight="0,3"/>
-<tile name="tileset/objects/Road_1I" symmetry="I" weight="0,6"/>
-<tile name="tileset/objects/Building_I" symmetry="I" weight="0,7"/>
-<tile name="tileset/objects/Blank_I" symmetry="I" weight="0,4"/>
+<tile name="tileset/objects/Road_1I" symmetry="I" weight="0,5"/>
+<tile name="tileset/objects/Building_T" symmetry="T" weight="0,4"/>
+<tile name="tileset/objects/Blank_X" symmetry="X" weight="0,3"/>
 	</tiles>
 <neighbors>  <neighbor left="tileset/objects/Road_4T 2" right="tileset/objects/Road_4T 2"/>
-  <neighbor left="tileset/objects/Blank_I 0" right="tileset/objects/Blank_I 0"/>
-  <neighbor left="tileset/objects/Blank_I 1" right="tileset/objects/Building_I 0"/>
-  <neighbor left="tileset/objects/Blank_I 1" right="tileset/objects/Blank_I 1"/>
-  <neighbor left="tileset/objects/Blank_I 0" right="tileset/objects/Building_I 1"/>
-  <neighbor left="tileset/objects/Building_I 1" right="tileset/objects/Road_1I 0"/>
+  <neighbor left="tileset/objects/Blank_X 0" right="tileset/objects/Blank_X 0"/>
+  <neighbor left="tileset/objects/Blank_X 1" right="tileset/objects/Building_T 0"/>
+  <neighbor left="tileset/objects/Blank_X 1" right="tileset/objects/Blank_X 1"/>
+  <neighbor left="tileset/objects/Blank_X 0" right="tileset/objects/Building_T 1"/>
+  <neighbor left="tileset/objects/Building_T 1" right="tileset/objects/Road_1I 0"/>
   <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Road_1I 0"/>
-  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Building_I 3"/>
+  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Building_T 3"/>
   <neighbor left="tileset/objects/Road_1I 1" right="tileset/objects/Road_1I 1"/>
-  <neighbor left="tileset/objects/Building_I 3" right="tileset/objects/Blank_I 0"/>
-  <neighbor left="tileset/objects/Building_I 0" right="tileset/objects/Building_I 0"/>
-  <neighbor left="tileset/objects/Blank_I 1" right="tileset/objects/Building_I 1"/>
+  <neighbor left="tileset/objects/Building_T 3" right="tileset/objects/Blank_X 0"/>
+  <neighbor left="tileset/objects/Building_T 0" right="tileset/objects/Building_T 0"/>
+  <neighbor left="tileset/objects/Blank_X 1" right="tileset/objects/Building_T 1"/>
   <neighbor left="tileset/objects/Road_4T 2" right="tileset/objects/Road_4T 3"/>
-  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Building_I 3"/>
+  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Building_T 3"/>
   <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Road_4T 1"/>
   <neighbor left="tileset/objects/Road_1I 1" right="tileset/objects/Road_2L 3"/>
-  <neighbor left="tileset/objects/Building_I 3" right="tileset/objects/Building_I 0"/>
-  <neighbor left="tileset/objects/Building_I 0" right="tileset/objects/Road_1I 0"/>
-  <neighbor left="tileset/objects/Building_I 0" right="tileset/objects/Blank_I 0"/>
-  <neighbor left="tileset/objects/Building_I 1" right="tileset/objects/Road_1I 0"/>
-  <neighbor left="tileset/objects/Building_I 3" right="tileset/objects/Blank_I 1"/>
-  <neighbor left="tileset/objects/Blank_I 0" right="tileset/objects/Road_1I 0"/>
+  <neighbor left="tileset/objects/Building_T 3" right="tileset/objects/Building_T 0"/>
+  <neighbor left="tileset/objects/Building_T 0" right="tileset/objects/Road_1I 0"/>
+  <neighbor left="tileset/objects/Building_T 0" right="tileset/objects/Blank_X 0"/>
+  <neighbor left="tileset/objects/Building_T 1" right="tileset/objects/Road_1I 0"/>
+  <neighbor left="tileset/objects/Building_T 3" right="tileset/objects/Blank_X 1"/>
+  <neighbor left="tileset/objects/Blank_X 0" right="tileset/objects/Road_1I 0"/>
   <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Road_2L 2"/>
   <neighbor left="tileset/objects/Road_2L 2" right="tileset/objects/Road_1I 3"/>
   <neighbor left="tileset/objects/Road_2L 3" right="tileset/objects/Road_1I 0"/>
   <neighbor left="tileset/objects/Road_1I 3" right="tileset/objects/Road_1I 3"/>
   <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Road_1I 0"/>
-  <neighbor left="tileset/objects/Blank_I 0" right="tileset/objects/Building_I 0"/>
-  <neighbor left="tileset/objects/Building_I 1" right="tileset/objects/Road_2L 2"/>
-  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Blank_I 1"/>
+  <neighbor left="tileset/objects/Blank_X 0" right="tileset/objects/Building_T 0"/>
+  <neighbor left="tileset/objects/Building_T 1" right="tileset/objects/Road_2L 2"/>
+  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Blank_X 1"/>
   <neighbor left="tileset/objects/Road_1I 3" right="tileset/objects/Road_4T 3"/>
-  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Building_I 3"/>
-  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Building_I 3"/>
-  <neighbor left="tileset/objects/Building_I 0" right="tileset/objects/Road_2L 1"/>
-  <neighbor left="tileset/objects/Building_I 1" right="tileset/objects/Road_2L 1"/>
+  <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Building_T 3"/>
+  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Building_T 3"/>
+  <neighbor left="tileset/objects/Building_T 0" right="tileset/objects/Road_2L 1"/>
+  <neighbor left="tileset/objects/Building_T 1" right="tileset/objects/Road_2L 1"/>
   <neighbor left="tileset/objects/Road_2L 2" right="tileset/objects/Road_2L 3"/>
-  <neighbor left="tileset/objects/Blank_I 0" right="tileset/objects/Building_I 2"/>
-  <neighbor left="tileset/objects/Blank_I 1" right="tileset/objects/Road_4T 1"/>
+  <neighbor left="tileset/objects/Blank_X 0" right="tileset/objects/Building_T 2"/>
+  <neighbor left="tileset/objects/Blank_X 1" right="tileset/objects/Road_4T 1"/>
   <neighbor left="tileset/objects/Road_2L 0" right="tileset/objects/Road_2L 2"/>
   <neighbor left="tileset/objects/Road_2L 1" right="tileset/objects/Road_4T 3"/>
   <neighbor left="tileset/objects/Road_2L 2" right="tileset/objects/Road_2L 0"/>
   <neighbor left="tileset/objects/Road_2L 1" right="tileset/objects/Road_4T 2"/>
   <neighbor left="tileset/objects/Road_4T 1" right="tileset/objects/Road_4T 3"/>
-  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Blank_I 1"/>
-  <neighbor left="tileset/objects/Blank_I 1" right="tileset/objects/Road_1I 0"/>
+  <neighbor left="tileset/objects/Road_4T 3" right="tileset/objects/Blank_X 1"/>
+  <neighbor left="tileset/objects/Blank_X 1" right="tileset/objects/Road_1I 0"/>
   <neighbor left="tileset/objects/Road_4T 2" right="tileset/objects/Road_1I 3"/>
   <neighbor left="tileset/objects/Road_1I 3" right="tileset/objects/Road_2L 3"/>
   <neighbor left="tileset/objects/Road_1I 0" right="tileset/objects/Road_4T 1"/>

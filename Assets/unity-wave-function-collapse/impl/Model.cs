@@ -7,6 +7,7 @@ The software is provided "as is", without warranty of any kind, express or impli
 */
 
 using System;
+using UnityEngine;
 
 public abstract class Model
 {
@@ -152,7 +153,20 @@ public abstract class Model
 		}
 	}
 
-	public bool Run(int seed, int limit)
+    public void SetFixedTile(int x, int y, int t)
+    {
+        int i = x + y * FMX;
+        // 1. Désactive toutes les autres possibilités pour cette cellule
+        for (int t2 = 0; t2 < T; t2++)
+        {
+            if (t2 != t)
+            {
+                Ban(i, t2);
+            }
+        }
+    }
+
+    public bool Run(int seed, int limit)
 	{
 		if (wave == null) Init();
 
@@ -167,7 +181,9 @@ public abstract class Model
 			random = new System.Random(seed);
 		}
 
-		for (int l = 0; l < limit || limit == 0; l++)
+		//Debug.Log(wave[0].Length);
+
+        for (int l = 0; l < limit || limit == 0; l++)
 		{
 			bool? result = Observe();
 			if (result != null) return (bool)result;
