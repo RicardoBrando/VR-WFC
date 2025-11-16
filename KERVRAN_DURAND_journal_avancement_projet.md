@@ -61,7 +61,9 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 - Le WFC ne parvient pas à générer correctement un envrionnement lorsqu'il y a trop de tuiles différentes utilisées dans l'entrainement et si le résultat et trop grand
 
-## **Idées d’amélioration :Peut-être qu'avec les contraintes XML cela pourrait mieux fonctionner**
+## **Idées d’amélioration :**
+
+- Peut-être qu'avec les contraintes XML cela pourrait mieux fonctionner
 
 ---
 
@@ -73,7 +75,9 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 - Ajouter une ou plusieurs interactions. Exemples : modification de l’environnement, collecte d’objets, déclenchement d’événements.
 - Gérer les modifications dynamiques de l’environnement (re-génération partielle, sauvegarde de l’état…) --> Utiliser les ressources données et les possibilités du plugin WFC.
 
-## **Travail réalisé : Génération initiale fonctionnelle et prise en compte des prefabs 3D. Build fonctionnel sur le casque VR.**
+## **Travail réalisé :**
+
+- Génération initiale fonctionnelle et prise en compte des prefabs 3D. Build fonctionnel sur le casque VR.
 
 ## **Résultats / captures :**
 - Génération en un seul bloc.
@@ -108,9 +112,8 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Améliorations prévues :**
 
-- Faire une interaction permettant de regénérer l'environnement avec des tuiles fixes qui restent dans le nouvel environnement.
-- Lier l'interaction à un bouton d'une manette pour pouvoir générer en tant qu'utilisateur.
-- Implémenter un moyen d'interagir facilement avec l'environnement pour l'utilisateur.
+- Implémenter une interaction pour sélectionner les tuiles à supprimer et re-générer.
+- Ajout d'un intéracteur pour la génération de l'environnement
 
 ---
 
@@ -118,11 +121,12 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 **Objectifs du jour :**
 
-- Créer une minimap sur laquelle il sera possible d'interagir via une manette pour fixer les tuiles avant la modification de l'environnement.
+- Créer une minimap sur laquelle il sera possible d'interagir via le controller pour sélectionner les tuiles de l'environnement à modifier.
 
 ## **Travail réalisé :**
 
-- Création et implémentation de la minimap avec vue du dessus pour l'utilisateur afin de pouvoir voir l'environnement et interagir avec plus facilement.
+- Création et implémentation de la minimap avec vue du dessus pour l'utilisateur afin de voir l'environnement et interagir avec plus facilement.
+- Navigation par téléportation avec fonctionnalité de retour à la dernière position.
 
 ## **Problèmes restants :**
 
@@ -130,7 +134,8 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Améliorations prévues :**
 
-- Faire l'interaction et la relier à la minimap et la manette pour interagir.
+- Sélection des tuiles à supprimer.
+- Navigation : ajout d'éléments visuels pour suivre le chemin parcouru à chaque téléportation.
 
 ---
 
@@ -162,7 +167,14 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Travail réalisé :**
 
+- Navigation : ajout de "fantômes" reliés entre eux et l'utilisateur afin de suivre son parcours dans l'environnement en temps réel.
+- Ajout d'un bouton pour lancer la génération de l'environnement.
+- Minimap interactive : sélection individuelle des tuiles à remplacer lors de la prochaine génération.
+
 ## **Problèmes restants :**
+
+- Minimap interactive : sélection d'une seule tuile à la fois. Map statique.
+- Génération : parfois la carte ne se génère pas, lors de la modification l'environnement ne se génère pas toujours (nécessaire de remplacer beaucoup de tuiles, échantillon trop simple).
 
 ## **Améliorations prévues :**
 
@@ -172,11 +184,20 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Résumé du projet :**
 
+Le projet consiste à générer une ville à l'aide de l'algorithme de Wave Function Collapse. L'utilisateur doit pouvoir naviguer dans l'environnement et le modifier en temps réel.
+
 ## **Ce que nous avons appris :**
+
+L'algorithme de WFC nécessite un échantillon très complet pour pouvoir fonctionner correctement. Il est aussi important de bien le paramétrer si l'on souhaite obtenir un résultat spécifique (quantité/type de routes, immeubles ...). Il aura aussi fallu implémenter la possibilité de fixer des tuiles dans l'environnement pour que l'algorithme génère le reste autour.
+Le manque de connaissances sur l'algorithme WFC nous a retardé qur l'implémentation des méthodes d'interaction.
 
 ## **Ce que nous ferions différemment :**
 
+Un meilleur travail en amont sur les idées à implémenter et une prise de décision moins tardive.
+
 ## **Lien vers le projet Unity / dépôt :**
+
+- https://github.com/RicardoBrando/VR-WFC
 
 ---
 
