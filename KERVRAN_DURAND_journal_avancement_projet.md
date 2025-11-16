@@ -38,7 +38,9 @@ On a crée le projet Unity "Generation Worlds" avec WFC et on a récupéré un a
 
 ## **Problèmes rencontrés :**
 
-## **Prochaines étapes :Réussir à générer un environnement avec WFC**
+## **Prochaines étapes :**
+
+Réussir à générer un environnement avec WFC
 
 ---
 
