@@ -38,7 +38,7 @@ public class Editing : MonoBehaviour
 
     private void Start()
     {
-        m_LayerMask = 0;
+        m_LayerMask = 1;
         m_WaitForStickRelease = false;
         tilesToDelete = new HashSet<int>();
     }
@@ -80,27 +80,29 @@ public class Editing : MonoBehaviour
             if(m_Ray.TryGetCurrent3DRaycastHit(out hit))
             {
                 GameObject target = hit.collider.transform.parent.gameObject;
-                tilesToDelete.Add(GetObjectIndex(target));
+
+                if(target.transform.GetChild(1).GetComponent<Button>() != null)
+                {
+                    target.transform.GetChild(1).GetComponent<Button>().ButtonClicked();
+                    return;
+                }
+
+                if (target.transform.GetComponent<Tile>() != null)
+                    target.transform.GetComponent<Tile>().SetMaterialOnSelect();
+                else return;
+
+                if (target.transform.GetComponent<Tile>().GetIsSelected()) tilesToDelete.Add(GetObjectIndex(target));
+                else tilesToDelete.Remove(GetObjectIndex(target));
             }
         }
 
-        if (m_WaitForGenerateRelease)
-        {
-            if (m_GenerateInput == 0)
-                m_WaitForGenerateRelease = false;
-        }
-        else if (m_GenerateInput == 1)
-        {
-            m_WaitForGenerateRelease = true;
-            environment.GenerateEnvironmentWithDelay(3f);
-        }
+        m_Generate.action.performed += ctx => environment.GenerateEnvironmentWithDelay(3f);
     }
 
     private void ReadInput()
     {
         m_StickInput = m_SwitchLayer.action.ReadValue<Vector2>();
         m_SelectInput = m_Select.action.ReadValue<float>();
-        m_GenerateInput = m_Generate.action.ReadValue<float>();
     }
 
     private int GetObjectIndex(GameObject go)

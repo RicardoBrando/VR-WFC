@@ -31,12 +31,6 @@ public class InteractableGrid : MonoBehaviour
         m_Map.transform.position += new Vector3(7.5f, 1f, 7.5f);
     }
 
-    private void Update()
-    {
-        Vector3 normale = -Vector3.Cross(m_Map.transform.right, m_Map.transform.forward);
-        transform.up = normale;
-    }
-
     public void GenerateGrid()
     {
         string ext = "_Mini";
@@ -64,6 +58,8 @@ public class InteractableGrid : MonoBehaviour
                 }
             }
         }
+
+        transform.Rotate(new Vector3(90f, 0f, 0f));
     }
 
     public void GenerateInteractableGrid(float time)
@@ -85,6 +81,7 @@ public class InteractableGrid : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         ClearGrid();
+        if (generatedMap.transform.GetChild(0).GetChild(0).childCount == 0) yield break;
         GenerateGrid();
     }
 }

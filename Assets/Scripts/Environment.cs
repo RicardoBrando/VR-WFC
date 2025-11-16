@@ -13,7 +13,7 @@ public class Environment : MonoBehaviour
 
     void Start()
     {
-        GenerateEnvironment();
+        //GenerateEnvironment();
     }
 
     private void GenerateEnvironment()
@@ -28,6 +28,7 @@ public class Environment : MonoBehaviour
         else
         {
             transform.GetChild(0).GetComponent<Wfc>().GenerateFrom();
+            grid.GenerateInteractableGrid(1f);
         }
     }
 
